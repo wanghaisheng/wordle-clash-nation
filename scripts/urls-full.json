@@ -1,12 +1,33 @@
 {
   "defaultLang": "en",
   "langs": [
-    ""
+    "",
+    "en",
+    "es",
+    "fr",
+    "ja",
+    "zh"
   ],
   "urls": [
-    "https://websimstarter.borninsea.com/privacy",
-    "https://websimstarter.borninsea.com/terms",
-    "https://websimstarter.borninsea.com/",
-    "https://websimstarter.borninsea.com/index.html"
+    "https://wordleclash.playgamesnow.org/privacy",
+    "https://wordleclash.playgamesnow.org/terms",
+    "https://wordleclash.playgamesnow.org/es/privacy",
+    "https://wordleclash.playgamesnow.org/es/terms",
+    "https://wordleclash.playgamesnow.org/fr/privacy",
+    "https://wordleclash.playgamesnow.org/fr/terms",
+    "https://wordleclash.playgamesnow.org/ja/privacy",
+    "https://wordleclash.playgamesnow.org/ja/terms",
+    "https://wordleclash.playgamesnow.org/zh/privacy",
+    "https://wordleclash.playgamesnow.org/zh/terms",
+    "https://wordleclash.playgamesnow.org/",
+    "https://wordleclash.playgamesnow.org/es",
+    "https://wordleclash.playgamesnow.org/fr",
+    "https://wordleclash.playgamesnow.org/ja",
+    "https://wordleclash.playgamesnow.org/zh",
+    "https://wordleclash.playgamesnow.org/index.html",
+    "https://wordleclash.playgamesnow.org/es/index.html",
+    "https://wordleclash.playgamesnow.org/fr/index.html",
+    "https://wordleclash.playgamesnow.org/ja/index.html",
+    "https://wordleclash.playgamesnow.org/zh/index.html"
   ]
 }

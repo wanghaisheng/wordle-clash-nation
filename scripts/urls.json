@@ -1,9 +1,27 @@
 {
   "defaultLang": "en",
-  "langs": [],
+  "langs": [
+    "en",
+    "es",
+    "fr",
+    "ja",
+    "zh"
+  ],
   "urls": [
     "/privacy",
     "/terms",
-    "/"
+    "/es/privacy",
+    "/es/terms",
+    "/fr/privacy",
+    "/fr/terms",
+    "/ja/privacy",
+    "/ja/terms",
+    "/zh/privacy",
+    "/zh/terms",
+    "/",
+    "/es",
+    "/fr",
+    "/ja",
+    "/zh"
   ]
 }

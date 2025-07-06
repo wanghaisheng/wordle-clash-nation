@@ -1,247 +1,1004 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://code.jquery.com https://unpkg.com https://d3js.org https://threejs.org https://cdn.plot.ly https://stackpath.bootstrapcdn.com https://maps.googleapis.com https://cdn.tailwindcss.com https://ajax.googleapis.com https://kit.fontawesome.com https://cdn.datatables.net https://maxcdn.bootstrapcdn.com https://code.highcharts.com https://tako-static-assets-production.s3.amazonaws.com https://www.youtube.com https://fonts.googleapis.com https://fonts.gstatic.com https://pfst.cf2.poecdn.net https://puc.poecdn.net https://i.imgur.com https://wikimedia.org https://*.icons8.com https://*.giphy.com https://picsum.photos https://images.unsplash.com; frame-src 'self' https://www.youtube.com https://trytako.com; child-src 'self'; manifest-src 'self'; worker-src 'self'; upgrade-insecure-requests; block-all-mixed-content;">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="title">WebSim Vibe Coding Starter</title>
-    <meta name="description" content="WebSim Vibe Coding Starter: Build a modern, SEO-optimized website in 5 minutes. AI赋能、极致自动化、响应式、SEO最佳实践、极具创意与未来感的SaaS工具。">
-    <meta name="keywords" content="WebSim, SaaS, Coding Starter, SEO, AI, Playground, 多语言, 创意, 极致体验">
+    
+    <!-- SEO Meta Tags -->
+    <title>Wordle Clash: Nation Domination - Epic State vs State Word Battle Game</title>
+    <meta name="description" content="Join the ultimate word puzzle battle! Represent your state in Wordle Clash - featuring fair AI-generated puzzles, multiple difficulty modes, and epic state rivalries. No cultural bias, just pure word skill competition.">
+    <meta name="keywords" content="wordle game, word puzzle, state competition, word battle, puzzle game, brain game, multiplayer wordle, state rivalry, word clash,nyt connection hints">
+    <meta name="author" content="PlayGamesNow">
     <meta name="robots" content="index, follow">
-    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Wordle Clash: Nation Domination - Epic State vs State Word Battle">
+    <meta property="og:description" content="Battle for your state's honor in the ultimate word puzzle competition! Fair AI puzzles, multiple modes, no cultural bias.">
+    <meta property="og:image" content="https://wordleclash.playgamesnow.org/images/og-image.jpg">
+    <meta property="og:url" content="https://wordleclash.playgamesnow.org/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Wordle Clash">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wordle Clash: Nation Domination">
+    <meta name="twitter:description" content="Battle for your state's honor in the ultimate word puzzle competition!">
+    <meta name="twitter:image" content="https://wordleclash.playgamesnow.org/images/twitter-card.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://wordleclash.playgamesnow.org/">
+    
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="en" href="https://wordleclash.playgamesnow.org/">
+    <link rel="alternate" hreflang="es" href="https://wordleclash.playgamesnow.org/es/">
+    <link rel="alternate" hreflang="x-default" href="https://wordleclash.playgamesnow.org/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" as="style">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="js/bootstrap-scripts.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
-    <script src="js/lang.js" defer></script>
-    <script src="js/playground.js" defer></script>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    
+    <!-- Stylesheets -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://websimstarter.borninsea.com/"},{"@type":"ListItem","position":2,"name":"首页","item":"https://websimstarter.borninsea.com/"}],"language":"en"}
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Wordle Clash: Nation Domination",
+        "alternateName": "Wordle Clash",
+        "description": "Epic state vs state word puzzle battle game with AI-generated puzzles, multiple difficulty modes, and fair competition for all players.",
+        "url": "https://wordleclash.playgamesnow.org/",
+        "applicationCategory": "GameApplication",
+        "operatingSystem": "Web Browser, iOS, Android",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "12547",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "PlayGamesNow",
+            "url": "https://playgamesnow.org"
+        },
+        "inLanguage": ["en", "es"],
+        "gameLocation": {
+            "@type": "Place",
+            "name": "United States"
+        },
+        "genre": ["Word Game", "Puzzle Game", "Strategy Game"],
+        "audience": {
+            "@type": "Audience",
+            "audienceType": "Word puzzle enthusiasts, competitive gamers"
+        }
+    }
     </script>
-    <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"Organization","name":"WebSim Team","url":"https://websimstarter.borninsea.com/about.html","description":"A small, dedicated team passionate about creating innovative web solutions.","logo":"https://websimstarter.borninsea.com/favicon.svg","sameAs":["https://github.com/wanghaisheng/a_websim-website-starter"],"foundingDate":"2023","founders":[{"@type":"Person","name":"Your Name"}],"address":"","contactPoint":[{"@type":"ContactPoint","contactType":"customer support","email":"contact@websimstarter.borninsea.com","telephone":""}],"audience":{"@type":"Audience","audienceType":"创业者, 产品经理, 编程小白"},"language":"zh"}
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#5D5CDE',
+                        secondary: '#FF6B6B',
+                        accent: '#4ECDC4',
+                        background: {
+                            light: '#FFFFFF',
+                            dark: '#181818'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif']
+                    },
+                    animation: {
+                        'bounce-slow': 'bounce 2s infinite',
+                        'pulse-slow': 'pulse 3s infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate'
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' }
+                        },
+                        glow: {
+                            'from': { boxShadow: '0 0 20px rgba(93, 92, 222, 0.5)' },
+                            'to': { boxShadow: '0 0 30px rgba(93, 92, 222, 0.8)' }
+                        }
+                    }
+                }
+            },
+            darkMode: 'class'
+        }
+        
+        // Dark mode detection
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        });
     </script>
-    <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"WebSite","name":"WebSim Vibe Coding Starter","url":"https://websimstarter.borninsea.com/","description":"WebSim Vibe Coding Starter: Build a modern, SEO-optimized website in 5 minutes. AI赋能、极致自动化、响应式、SEO最佳实践、极具创意与未来感的SaaS工具。","inLanguage":"en","publisher":{"@type":"Organization","name":"WebSim Team"}}
-    </script>
-
 </head>
-<body>
-    <header class="header">
-        <div class="container">
-            <div class="logo">
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="WebSim Logo">
-                  <circle cx="20" cy="20" r="20" fill="url(#paint0_radial_header)"/>
-                  <text x="50%" y="55%" text-anchor="middle" fill="#fff" font-size="18" font-family="monospace" dy=".3em">WS</text>
-                  <defs>
-                    <radialGradient id="paint0_radial_header" cx="0.5" cy="0.5" r="0.5" fx="0.2" fy="0.2">
-                      <stop offset="0%" stop-color="#6f00ff"/>
-                      <stop offset="100%" stop-color="#00eaff"/>
-                    </radialGradient>
-                  </defs>
-                </svg>
-                <span class="brand" data-i18n="brand">WebSim Vibe Coding Starter</span>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#features" data-i18n="nav_features">Features</a></li>
-                    <li><a href="#playground" data-i18n="nav_playground">Playground</a></li>
-                    <li><a href="#showcase" data-i18n="nav_showcase">Showcase</a></li>
-                    <li><a href="#future" data-i18n="nav_future">Vision</a></li>
-                    <li><a href="about.html" data-i18n="nav_about">About</a></li>
-                    <li><a href="career.html" data-i18n="nav_career">Career</a></li>
-                    <li class="language-selector">
-                         <div class="lang-switcher" id="lang-switcher"></div>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 data-i18n="hero_title">零代码，5分钟上线你的创业网站</h1>
-                <p data-i18n="hero_summary">WebSim Vibe Coding Starter 专为创业者、产品经理和编程经验有限的创新者打造。无需代码基础，5分钟内即可验证你的商业想法，快速上线专业网站。内置 SaaS 工具、游戏类 App 落地页与原型设计提示词模板、SEO 优化 prompt 及常用自动化脚本，助你高效实现从创意到落地。</p>
-                <p data-i18n="hero_subtitle">AI驱动，SEO极致优化，多语言支持，助力创新高效落地。</p>
-                <div class="hero-cta">
-                    <a href="#playground" class="btn btn-primary" data-i18n="cta_try">立即免费试用 | 零代码上线你的创意</a>
-                </div>
-            </div>
-            <div class="hero-bg-anim" id="hero-bg-anim"></div>
-        </div>
-    </section>
-
-    <section id="features" class="features">
-        <div class="container">
-            <h2 data-i18n="features_title">Features</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <h3 data-i18n="features.ai_research.title">AI 研究与需求分析</h3>
-                    <p data-i18n="features.ai_research.description">集成 Grok.com，自动挖掘用户痛点、竞品分析。</p>
-                </div>
-                <div class="feature-card">
-                    <h3 data-i18n="features.prd_generation.title">PRD 生成</h3>
-                    <p data-i18n="features.prd_generation.description">集成 Google AI Studio，根据用户输入与调研自动生成详细产品需求文档（PRD.md）。</p>
-                </div>
-                <div class="feature-card">
-                    <h3 data-i18n="features.code_generation.title">代码与内容生成</h3>
-                    <p data-i18n="features.code_generation.description">集成 WebSim.com，结合 PRD.md 和 prompt 模板自动生成完整 HTML/CSS/JS 站点。</p>
-                </div>
-                <div class="feature-card">
-                    <h3 data-i18n="features.seo_automation.title">SEO 自动化</h3>
-                    <p data-i18n="features.seo_automation.description">自动生成 sitemap、robots.txt，集成 IndexNow、Bing、Google Search Console API，自动提交和校验。</p>
-                </div>
-                <div class="feature-card">
-                    <h3 data-i18n="features.multilingual.title">多语言支持</h3>
-                    <p data-i18n="features.multilingual.description">locale 目录自动生成中英文等多语言 JSON 资源，支持动态切换。</p>
-                </div>
-                <div class="feature-card">
-                    <h3 data-i18n="features.one_click_deploy.title">一键部署</h3>
-                    <p data-i18n="features.one_click_deploy.description">支持 Cloudflare Pages、GitHub Pages 等静态托管，自动化 CI/CD。</p>
-                </div>
-                <div class="feature-card">
-                    <h3 data-i18n="features.no_code.title">无需编程，自动生成全站</h3>
-                    <p data-i18n="features.no_code.description">通过AI和模板，快速生成网站，无需手动编码。</p>
-                </div>
-                <div class="feature-card">
-                    <h3 data-i18n="features.fast_validation.title">5分钟快速验证产品概念</h3>
-                    <p data-i18n="features.fast_validation.description">迅速搭建原型，验证市场需求。</p>
-                </div>
-                 <div class="feature-card">
-                    <h3 data-i18n="features.pwa_mobile.title">PWA & mobile-first, blazing fast</h3>
-                    <p data-i18n="features.pwa_mobile.description">提供卓越的移动体验和性能。</p>
-                </div>
-                <div class="feature-card">
-                    <h3 data-i18n="features.ai_scraper.title">AI Scraper friendly</h3>
-                    <p data-i18n="features.ai_scraper.description">自动生成 robots.txt & llms.txt，优化AI爬虫索引。</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="playground" class="playground-section">
-        <div class="container">
-            <h2 data-i18n="playground_title">Try the Interactive Playground</h2>
-            <div class="playground-tabs">
-                <ul class="tab-list">
-                    <li class="tab active" data-tab="step1" data-i18n="tab_grok" tabindex="0">1. Research on Grok</li>
-                    <li class="tab" data-tab="step2" data-i18n="tab_google" tabindex="0">2. Generate PRD.md</li>
-                    <li class="tab" data-tab="step3" data-i18n="tab_websim" tabindex="0">3. Generate Site with WebSim</li>
-                    <li class="tab" data-tab="step4" data-i18n="tab_deploy" tabindex="0">4. Deploy & Go Live</li>
-                </ul>
-                <div class="tab-content">
-                    <div class="tab-pane active" id="step1">
-                        <div class="tab-desc">
-                            <div class="desc-main">
-                                <h3 data-i18n="grok_title">Research User Complaints on Grok</h3>
-                                <ul class="desc-features">
-                                    <li data-i18n="grok_feat1">AI-powered search for user pain points</li>
-                                    <li data-i18n="grok_feat2">Real-time trending topics</li>
-                                    <li data-i18n="grok_feat3">Export insights for product ideation</li>
-                                </ul>
-                                <div class="desc-resources">
-                                    <a href="https://grok.x.com/" target="_blank" class="desc-cta btn btn-secondary" data-i18n="grok_cta">Go to Grok.com &rarr;</a>
-                                </div>
-                            </div>
-                            <div class="desc-media">
-                                <img src="https://assets.codeium.com/websim/grok-sample.png" alt="Grok.com Screenshot" loading="lazy" style="max-width:260px;border-radius:12px;box-shadow:0 2px 12px #00eaff44;">
-                            </div>
-                        </div>
-                        <iframe src="https://grok.x.com/" title="Grok.com Research" style="width:100%;height:400px;border-radius:16px;border:none;box-shadow:0 2px 12px #00eaff44;"></iframe>
-                        <p data-i18n="grok_hint">Use Grok to research user pain points and complaints for your SaaS idea. Copy the insights for the next step.</p>
-                    </div>
-                    <div class="tab-pane" id="step2">
-                        <div class="tab-desc">
-                            <div class="desc-main">
-                                <h3 data-i18n="google_title">Generate PRD.md with Google AI Studio</h3>
-                                <ul class="desc-features">
-                                    <li data-i18n="google_feat1">AI generates detailed PRD.md from research</li>
-                                    <li data-i18n="google_feat2">Starter templates for SaaS, tools, apps</li>
-                                    <li data-i18n="google_feat3">Easy editing and export</li>
-                                </ul>
-                                <div class="desc-resources">
-                                    <a href="https://aistudio.google.com/" target="_blank" class="desc-cta btn btn-secondary" data-i18n="google_cta">Go to Google AI Studio &rarr;</a>
-                                </div>
-                            </div>
-                             <div class="desc-media">
-                                <img src="https://assets.codeium.com/websim/google-ai-studio-sample.png" alt="Google AI Studio Screenshot" loading="lazy" style="max-width:260px;border-radius:12px;box-shadow:0 2px 12px #00eaff44;">
-                            </div>
-                        </div>
-                        <p data-i18n="google_hint">Paste your Grok research into Google AI Studio with a PRD prompt to generate your product requirements. Download as PRD.md.</p>
-                    </div>
-                    <div class="tab-pane" id="step3">
-                        <div class="tab-desc">
-                            <div class="desc-main">
-                                <h3 data-i18n="websim_title">Generate Site with WebSim.com</h3>
-                                <ul class="desc-features">
-                                    <li data-i18n="websim_feat1">AI generates full website from PRD.md</li>
-                                    <li data-i18n="websim_feat2">Multiple design templates</li>
-                                    <li data-i18n="websim_feat3">Download HTML, CSS, JS files</li>
-                                </ul>
-                                <div class="desc-resources">
-                                    <a href="https://websim.com/" target="_blank" class="desc-cta btn btn-secondary" data-i18n="websim_cta">Go to WebSim.com &rarr;</a>
-                                </div>
-                            </div>
-                            <div class="desc-media">
-                                <img src="https://assets.codeium.com/websim/websim-sample.png" alt="WebSim.com Screenshot" loading="lazy" style="max-width:260px;border-radius:12px;box-shadow:0 2px 12px #00eaff44;">
-                            </div>
-                        </div>
-                        <p data-i18n="websim_hint">Upload your PRD.md to WebSim, choose a template, and generate your website code.</p>
-                    </div>
-                    <div class="tab-pane" id="step4">
-                        <div class="tab-desc">
-                            <div class="desc-main">
-                                <h3 data-i18n="deploy_title">Deploy & Go Live</h3>
-                                <ul class="desc-features">
-                                    <li data-i18n="deploy_feat1">Easy deployment to Cloudflare Pages, GitHub Pages</li>
-                                    <li data-i18n="deploy_feat2">Automated CI/CD setup</li>
-                                    <li data-i18n="deploy_feat3">Global content delivery network</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <p data-i18n="deploy_hint">Place generated files in your project, configure `config.json`, connect to Cloudflare/GitHub, and `git push` to deploy.</p>
+<body class="bg-background-light dark:bg-background-dark text-gray-900 dark:text-white font-sans overflow-x-hidden">
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 dark:bg-gray-900/90 backdrop-blur-md z-50 border-b border-gray-200 dark:border-gray-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-4">
+                    <div class="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                        🏆 Wordle Clash
                     </div>
                 </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#features" class="text-gray-700 dark:text-gray-300 hover:text-primary transition-colors" data-key="nav_features">Features</a>
+                    <a href="#modes" class="text-gray-700 dark:text-gray-300 hover:text-primary transition-colors" data-key="nav_modes">Game Modes</a>
+                    <a href="#rankings" class="text-gray-700 dark:text-gray-300 hover:text-primary transition-colors" data-key="nav_rankings">Rankings</a>
+                    <select id="languageSelector" class="bg-transparent text-sm border border-gray-300 dark:border-gray-600 rounded-md px-2 py-1">
+                        <option value="en" data-key="lang_en">🇺🇸 English</option>
+                        <option value="es" data-key="lang_es">🇪🇸 Español</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-primary/10 via-accent/5 to-secondary/10 dark:from-primary/20 dark:via-accent/10 dark:to-secondary/20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <div class="inline-flex items-center px-4 py-2 bg-primary/10 dark:bg-primary/20 rounded-full text-primary font-medium text-sm mb-6 animate-pulse-slow">
+                        <span class="w-2 h-2 bg-primary rounded-full mr-2"></span>
+                        <span data-key="hero_label">🔥 #1 Word Battle Game</span>
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                        <span data-key="hero_title_part1">Battle for Your</span>
+                        <br>
+                        <span class="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent animate-glow">
+                            <span data-key="hero_title_part2">State's Honor</span>
+                        </span>
+                    </h1>
+                    
+                    <p class="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-lg">
+                        <span data-key="hero_subtitle">Join the ultimate word puzzle competition! Fair AI-generated puzzles, no cultural bias, just pure skill and state pride.</span>
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                        <button class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all transform hover:scale-105 hover:shadow-lg animate-glow">
+                            <span data-key="hero_cta_play">🚀 Play Now - FREE</span>
+                        </button>
+                        <button class="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all">
+                            <span data-key="hero_cta_download">📱 Download App</span>
+                        </button>
+                    </div>
+                    
+                    <div class="flex items-center justify-center lg:justify-start space-x-6 text-sm text-gray-600 dark:text-gray-400">
+                        <div class="flex items-center">
+                            <span class="text-yellow-500 mr-1">⭐⭐⭐⭐⭐</span>
+                            <span data-key="hero_rating">4.8/5 Rating</span>
+                        </div>
+                        <div>
+                            <span data-key="hero_players">12.5K+ Players</span>
+                        </div>
+                        <div>
+                            <span data-key="hero_states">50 States</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <iframe src="https://iframe-wordle-clash.playgamesnow.org" class="w-full h-[400px] md:h-[500px] rounded-2xl shadow-2xl animate-float" frameborder="0" allowfullscreen></iframe>
+                    <div class="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-primary to-secondary rounded-full opacity-20 animate-pulse"></div>
+                    <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-accent to-secondary rounded-full opacity-10 animate-bounce-slow"></div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="showcase" class="showcase-section">
-        <div class="container">
-            <h2 data-i18n="showcase_title">Showcase</h2>
-            <p data-i18n="showcase_content">案例展示即将推出，敬请期待！</p>
-            <!-- Placeholder for showcase items -->
-        </div>
-    </section>
-
-    <section id="future" class="future-section">
-        <div class="container">
-            <h2 data-i18n="future_title">未来愿景</h2>
-            <div class="features-grid">
-                 <div class="feature-card">
-                    <h3 data-i18n="future.api.title">支持更多第三方 API</h3>
-                    <p data-i18n="future.api.description">如 Notion、Figma、Midjourney 等，拓展集成能力。</p>
+    <!-- Problem/Solution Section -->
+    <section class="py-16 bg-gray-50 dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    <span data-key="problem_section_title">Tired of Unfair Word Games?</span>
+                </h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                    <span data-key="problem_section_subtitle">We heard your complaints about other word games. Wordle Clash fixes everything that's broken.</span>
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-red-50 dark:bg-red-900/20 p-6 rounded-xl border-l-4 border-red-500">
+                    <h3 class="font-bold text-red-700 dark:text-red-400 mb-3 flex items-center">
+                        <span class="mr-2">❌</span>
+                        <span data-key="other_games_problems_title">Other Games Problems</span>
+                    </h3>
+                    <ul class="space-y-2 text-red-600 dark:text-red-300">
+                        <li data-key="other_games_problem1">• Too focused on NYC/American culture</li>
+                        
+                        <li data-key="other_games_problem2">• Inconsistent difficulty - too easy or impossibly hard</li>
+                        
+                        <li data-key="other_games_problem3">• Obscure categories requiring niche knowledge</li>
+                        
+                        <li data-key="other_games_problem4">• No progression or meaningful rewards</li>
+                        
+                        <li data-key="other_games_problem5">• Boring single-player experience</li>
+                    </ul>
                 </div>
-                <div class="feature-card">
-                    <h3 data-i18n="future.customization.title">支持自定义主题与 UI 组件市场</h3>
-                    <p data-i18n="future.customization.description">提供更丰富的个性化选项和设计资源。</p>
-                </div>
-                <div class="feature-card">
-                    <h3 data-i18n="future.intelligent_updates.title">智能内容更新与 A/B 测试</h3>
-                    <p data-i18n="future.intelligent_updates.description">助力持续优化网站内容和用户体验。</p>
+                
+                <div class="bg-green-50 dark:bg-green-900/20 p-6 rounded-xl border-l-4 border-green-500">
+                    <h3 class="font-bold text-green-700 dark:text-green-400 mb-3 flex items-center">
+                        <span class="mr-2">✅</span>
+                        <span data-key="wordle_clash_solutions_title">Wordle Clash Solutions</span>
+                    </h3>
+                    <ul class="space-y-2 text-green-600 dark:text-green-300">
+                        <li data-key="wordle_clash_solution1">• Fair AI puzzles - no cultural bias</li>
+                        
+                        <li data-key="wordle_clash_solution2">• Smart difficulty that adapts to your skill</li>
+                        
+                        <li data-key="wordle_clash_solution3">• Multiple modes from beginner to expert</li>
+                        
+                        <li data-key="wordle_clash_solution4">• State rankings &amp; meaningful achievements</li>
+                        
+                        <li data-key="wordle_clash_solution5">• Epic state vs state competition</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="container">
-            <p data-i18n="footer_copyright">&copy; 2024 WebSim Vibe Coding Starter. All rights reserved.</p>
-            <!-- Add other footer links if needed -->
+    <!-- NYT Connections Comparison Section -->
+    <section class="py-16 bg-white dark:bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    <span data-key="nyt_comparison_title">Wordle Clash vs NYT Connections</span>
+                </h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                    <span data-key="nyt_comparison_subtitle">Tired of obscure categories and cultural bias? We built a better word game.</span>
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-red-50 dark:bg-red-900/20 p-6 rounded-xl border-l-4 border-red-500">
+                    <h3 class="font-bold text-red-700 dark:text-red-400 mb-3 flex items-center">
+                        <span class="mr-2">❌</span>
+                        <span data-key="nyt_issues_title">NYT Connections Issues</span>
+                    </h3>
+                    <ul class="space-y-2 text-red-600 dark:text-red-300">
+                        <li data-key="nyt_issue1">• Obscure/Niche Categories (NYC-centric, trivia-based)</li>
+                        
+                        <li data-key="nyt_issue2">• Cultural Bias (American/NYC audience)</li>
+                        
+                        <li data-key="nyt_issue3">• Inconsistent Difficulty (too easy or impossibly hard)</li>
+                        
+                        <li data-key="nyt_issue4">• Lack of Inventiveness (predictable patterns)</li>
+                        
+                        <li data-key="nyt_issue5">• Reduced Satisfaction (3 of 4 categories enough)</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-green-50 dark:bg-green-900/20 p-6 rounded-xl border-l-4 border-green-500">
+                    <h3 class="font-bold text-green-700 dark:text-green-400 mb-3 flex items-center">
+                        <span class="mr-2">✅</span>
+                        <span data-key="wordle_clash_advantages_title">Wordle Clash Advantages</span>
+                    </h3>
+                    <ul class="space-y-2 text-green-600 dark:text-green-300">
+                        <li data-key="wordle_clash_advantage1">• Fair AI puzzles (no cultural bias, pure skill)</li>
+                        
+                        <li data-key="wordle_clash_advantage2">• Adaptive Difficulty (learns your skill, perfectly balanced)</li>
+                        
+                        <li data-key="wordle_clash_advantage3">• Multiple Modes (beginner to expert, varied challenges)</li>
+                        
+                        <li data-key="wordle_clash_advantage4">• Strategic Power-ups (add layers, no pay-to-win)</li>
+                        
+                        <li data-key="wordle_clash_advantage5">• Epic State vs State Competition (meaningful progression)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Modes Section -->
+    <section id="modes" class="py-16 bg-white dark:bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    <span data-key="game_modes_title">Three Epic Battle Modes</span>
+                </h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300">
+                    <span data-key="game_modes_subtitle">Choose your battlefield and prove your state's superiority</span>
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 p-8 rounded-2xl border border-blue-200 dark:border-blue-700 transform hover:scale-105 transition-all duration-300">
+                    <div class="text-4xl mb-4">⚔️</div>
+                    <h3 class="text-2xl font-bold mb-4 text-blue-800 dark:text-blue-300">
+                        <span data-key="daily_challenge_title">Daily Challenge</span>
+                    </h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-6">
+                        <span data-key="daily_challenge_description">Pure skill competition. Everyone gets the same 4x4 puzzle. No power-ups, no mercy. One chance to represent your state.</span>
+                    </p>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex items-center">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                            <span data-key="daily_challenge_feature1">100 points + speed bonus</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                            <span data-key="daily_challenge_feature2">Determines state rankings</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                            <span data-key="daily_challenge_feature3">One attempt per day</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 p-8 rounded-2xl border border-green-200 dark:border-green-700 transform hover:scale-105 transition-all duration-300">
+                    <div class="text-4xl mb-4">🎯</div>
+                    <h3 class="text-2xl font-bold mb-4 text-green-800 dark:text-green-300">
+                        <span data-key="free_challenge_title">Free Challenge</span>
+                    </h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-6">
+                        <span data-key="free_challenge_description">Train and contribute to your state's wealth. Use power-up cards, choose difficulty, play unlimited. Build your state's knowledge treasury.</span>
+                    </p>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex items-center">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                            <span data-key="free_challenge_feature1">Dynamic scoring system</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                            <span data-key="free_challenge_feature2">Power-up cards available</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                            <span data-key="free_challenge_feature3">Unlimited attempts</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-red-50 to-red-100 dark:from-red-900/20 dark:to-red-800/20 p-8 rounded-2xl border border-red-200 dark:border-red-700 transform hover:scale-105 transition-all duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-red-500 text-white text-xs px-2 py-1 rounded-bl-lg font-bold">
+                        <span data-key="hell_mode_legendary">LEGENDARY</span>
+                    </div>
+                    <div class="text-4xl mb-4">👹</div>
+                    <h3 class="text-2xl font-bold mb-4 text-red-800 dark:text-red-300">
+                        <span data-key="hell_mode_title">Hell Mode</span>
+                    </h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-6">
+                        <span data-key="hell_mode_description">The ultimate test. Easy warm-up, then brutal 6x6 nightmare. Only 2% survive. Weekend only. Glory eternal.</span>
+                    </p>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex items-center">
+                            <span class="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                            <span data-key="hell_mode_feature1">1000+ points for conquerors</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                            <span data-key="hell_mode_feature2">Auto-generated bragging rights</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
+                            <span data-key="hell_mode_feature3">Weekend warrior status</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-gray-50 dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    <span data-key="why_wordle_clash_dominates_title">Why Wordle Clash Dominates</span>
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-3xl mb-4">🤖</div>
+                    <h3 class="text-xl font-bold mb-3">
+                        <span data-key="feature_smart_ai_puzzles_title">Smart AI Puzzles</span>
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        <span data-key="feature_smart_ai_puzzles_description">No more obscure NYC references or cultural bias. Our AI creates fair puzzles that test skill, not trivia knowledge.</span>
+                    </p>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-3xl mb-4">⚖️</div>
+                    <h3 class="text-xl font-bold mb-3">
+                        <span data-key="feature_adaptive_difficulty_title">Adaptive Difficulty</span>
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        <span data-key="feature_adaptive_difficulty_description">No more "too easy or impossible" days. Our system learns your skill level and keeps challenges perfectly balanced.</span>
+                    </p>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-3xl mb-4">🏆</div>
+                    <h3 class="text-xl font-bold mb-3">
+                        <span data-key="feature_state_pride_system_title">State Pride System</span>
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        <span data-key="feature_state_pride_system_description">Every puzzle contributes to your state's ranking. Turn personal achievement into regional dominance.</span>
+                    </p>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-3xl mb-4">🎴</div>
+                    <h3 class="text-xl font-bold mb-3">
+                        <span data-key="feature_strategic_powerups_title">Strategic Power-ups</span>
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        <span data-key="feature_strategic_powerups_description">Hint cards, theme reveals, and multipliers add strategy layers without making the game pay-to-win.</span>
+                    </p>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-3xl mb-4">📊</div>
+                    <h3 class="text-xl font-bold mb-3">
+                        <span data-key="feature_realtime_rankings_title">Real-time Rankings</span>
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        <span data-key="feature_realtime_rankings_description">Watch your state climb the leaderboards in real-time. Separate honor rankings and contribution scores.</span>
+                    </p>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-3xl mb-4">🔥</div>
+                    <h3 class="text-xl font-bold mb-3">
+                        <span data-key="feature_viral_hell_mode_title">Viral Hell Mode</span>
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        <span data-key="feature_viral_hell_mode_description">The ultimate bragging rights challenge. Auto-generated victory cards make conquering Hell Mode instantly shareable.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-16 bg-white dark:bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    <span data-key="why_choose_us_title">Why Wordle Clash? Your Ultimate Word Game</span>
+                </h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                    <span data-key="why_choose_us_subtitle">Beyond just matching words, we offer a dynamic and engaging experience.</span>
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-primary/5 dark:bg-primary/10 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-t-4 border-primary">
+                    <div class="text-3xl mb-4 text-primary">🌍</div>
+                    <h3 class="text-xl font-bold mb-3 text-primary">
+                        <span data-key="why_choose_global_fair_title">Global & Fair</span>
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        <span data-key="why_choose_global_fair_description">Our AI-generated puzzles are designed for a global audience, free from cultural biases that plague other games. Pure linguistic challenge for everyone.</span>
+                    </p>
+                </div>
+                
+                <div class="bg-secondary/5 dark:bg-secondary/10 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-t-4 border-secondary">
+                    <div class="text-3xl mb-4 text-secondary">💡</div>
+                    <h3 class="text-xl font-bold mb-3 text-secondary">
+                        <span data-key="why_choose_engaging_strategic_title">Engaging & Strategic</span>
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        <span data-key="why_choose_engaging_strategic_description">With multiple game modes, adaptive difficulty, and strategic power-ups, Wordle Clash offers depth and replayability that keeps you coming back for more.</span>
+                    </p>
+                </div>
+                
+                <div class="bg-accent/5 dark:bg-accent/10 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border-t-4 border-accent">
+                    <div class="text-3xl mb-4 text-accent">🤝</div>
+                    <h3 class="text-xl font-bold mb-3 text-accent">
+                        <span data-key="why_choose_community_competition_title">Community & Competition</span>
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        <span data-key="why_choose_community_competition_description">Join thousands of players in state vs. state battles, climb global leaderboards, and share your Hell Mode conquests. It's more than a game; it's a community.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rankings Section -->
+    <section id="rankings" class="py-16 bg-white dark:bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    <span data-key="rankings_section_title">Live State Battle Rankings</span>
+                </h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300">
+                    <span data-key="rankings_section_subtitle">See how your state stacks up in the ultimate word battle</span>
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gradient-to-br from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 p-6 rounded-xl border border-yellow-200 dark:border-yellow-700">
+                    <h3 class="text-2xl font-bold mb-4 flex items-center text-yellow-800 dark:text-yellow-300">
+                        <span class="mr-2">💎</span>
+                        <span data-key="honor_rankings_title">Honor Rankings</span>
+                    </h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4">
+                        <span data-key="honor_rankings_description">Daily Challenge pure skill competition</span>
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between bg-white/50 dark:bg-gray-700/50 p-3 rounded-lg">
+                            <div class="flex items-center">
+                                <span class="text-2xl mr-3">🥇</span>
+                                <span class="font-semibold">California</span>
+                            </div>
+                            <span class="text-primary font-bold">94.2%</span>
+                        </div>
+                        <div class="flex items-center justify-between bg-white/50 dark:bg-gray-700/50 p-3 rounded-lg">
+                            <div class="flex items-center">
+                                <span class="text-2xl mr-3">🥈</span>
+                                <span class="font-semibold">Massachusetts</span>
+                            </div>
+                            <span class="text-secondary font-bold">91.8%</span>
+                        </div>
+                        <div class="flex items-center justify-between bg-white/50 dark:bg-gray-700/50 p-3 rounded-lg">
+                            <div class="flex items-center">
+                                <span class="text-2xl mr-3">🥉</span>
+                                <span class="font-semibold">New York</span>
+                            </div>
+                            <span class="text-accent font-bold">89.5%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 p-6 rounded-xl border border-green-200 dark:border-green-700">
+                    <h3 class="text-2xl font-bold mb-4 flex items-center text-green-800 dark:text-green-300">
+                        <span class="mr-2">💰</span>
+                        <span data-key="contribution_rankings_title">Contribution Rankings</span>
+                    </h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4">
+                        <span data-key="contribution_rankings_description">Free Challenge accumulated state wealth</span>
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between bg-white/50 dark:bg-gray-700/50 p-3 rounded-lg">
+                            <div class="flex items-center">
+                                <span class="text-2xl mr-3">👑</span>
+                                <span class="font-semibold">Texas</span>
+                            </div>
+                            <span class="text-primary font-bold">2.4M</span>
+                        </div>
+                        <div class="flex items-center justify-between bg-white/50 dark:bg-gray-700/50 p-3 rounded-lg">
+                            <div class="flex items-center">
+                                <span class="text-2xl mr-3">🚀</span>
+                                <span class="font-semibold">Florida</span>
+                            </div>
+                            <span class="text-secondary font-bold">2.1M</span>
+                        </div>
+                        <div class="flex items-center justify-between bg-white/50 dark:bg-gray-700/50 p-3 rounded-lg">
+                            <div class="flex items-center">
+                                <span class="text-2xl mr-3">⚡</span>
+                                <span class="font-semibold">California</span>
+                            </div>
+                            <span class="text-accent font-bold">1.9M</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="py-16 bg-gray-50 dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    <span data-key="social_proof_title">Join the Word Warriors</span>
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-bold text-primary mb-2">12,547</div>
+                    <div class="text-gray-600 dark:text-gray-300">
+                        <span data-key="social_proof_active_players">Active Players</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-bold text-secondary mb-2">89%</div>
+                    <div class="text-gray-600 dark:text-gray-300">
+                        <span data-key="social_proof_return_daily">Return Daily</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-bold text-accent mb-2">4.8/5</div>
+                    <div class="text-gray-600 dark:text-gray-300">
+                        <span data-key="social_proof_player_rating">Player Rating</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-primary font-bold">JM</span>
+                        </div>
+                        <div>
+                            <div class="font-semibold" data-key="testimonial_jessica_name">Jessica M.</div>
+                            <div class="text-sm text-gray-500" data-key="testimonial_jessica_title">Texas Champion</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">
+                        <span data-key="testimonial_jessica_quote">"Finally, a word game that doesn't discriminate! No more obscure NYC trivia. Just pure skill and state pride. 🔥"</span>
+                    </p>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-secondary/20 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-secondary font-bold">MK</span>
+                        </div>
+                        <div>
+                            <div class="font-semibold" data-key="testimonial_mike_name">Mike K.</div>
+                            <div class="text-sm text-gray-500" data-key="testimonial_mike_title">California Hell Conqueror</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">
+                        <span data-key="testimonial_mike_quote">"Hell Mode is INSANE! Conquered it last weekend and the bragging rights are real. My whole office is talking about it!"</span>
+                    </p>
+                </div>
+                
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-accent font-bold">SR</span>
+                        </div>
+                        <div>
+                            <div class="font-semibold" data-key="testimonial_sarah_name">Sarah R.</div>
+                            <div class="text-sm text-gray-500" data-key="testimonial_sarah_title">Florida Word Master</div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 dark:text-gray-300 text-sm">
+                        <span data-key="testimonial_sarah_quote">"Love how the difficulty adapts! No more impossible or too-easy days. Every challenge feels just right for improvement."</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Play Section -->
+    <section class="py-16 bg-gray-50 dark:bg-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    <span data-key="how_to_play_title">How to Play Wordle Clash</span>
+                </h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                    <span data-key="how_to_play_subtitle">Master the art of word connections and lead your state to victory!</span>
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <img src="/images/how-to-play.png" alt="How to Play Wordle Clash" class="rounded-xl shadow-lg">
+                </div>
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 bg-primary/20 text-primary rounded-full p-3 mr-4 text-xl font-bold">1</div>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-2">
+                                <span data-key="how_to_play_step1_title">Identify Categories</span>
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-300">
+                                <span data-key="how_to_play_step1_description">Your goal is to find four groups of four words that share a common theme or connection. Think outside the box!</span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 bg-secondary/20 text-secondary rounded-full p-3 mr-4 text-xl font-bold">2</div>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-2">
+                                <span data-key="how_to_play_step2_title">Select & Submit</span>
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-300">
+                                <span data-key="how_to_play_step2_description">Tap on four words you believe belong together. Once you've made your selection, hit submit to see if you're right.</span>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 bg-accent/20 text-accent rounded-full p-3 mr-4 text-xl font-bold">3</div>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-2">
+                                <span data-key="how_to_play_step3_title">Manage Mistakes & Win</span>
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-300">
+                                <span data-key="how_to_play_step3_description">You have a limited number of mistakes. Use power-ups in Free Challenge mode to assist you. Conquer all categories to win and earn points for your state!</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white dark:bg-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    <span data-key="faq_section_title">Frequently Asked Questions</span>
+                </h2>
+                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                    <span data-key="faq_section_subtitle">Got questions? We've got answers!</span>
+                </p>
+            </div>
+            
+            <div class="space-y-6">
+                <div class="bg-gray-50 dark:bg-gray-900 p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-3">
+                        <span data-key="faq1_question">What makes Wordle Clash different from other word games?</span>
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        <span data-key="faq1_answer">Wordle Clash features fair, AI-generated puzzles without cultural bias, adaptive difficulty, multiple engaging game modes including state vs. state competition, and strategic power-ups. It's built for global word warriors.</span>
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 dark:bg-gray-900 p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-3">
+                        <span data-key="faq2_question">Is Wordle Clash free to play?</span>
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        <span data-key="faq2_answer">Yes, Wordle Clash is completely free to play! We offer in-app purchases for optional power-ups and customization items, but the core game experience is accessible to everyone without cost.</span>
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 dark:bg-gray-900 p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-3">
+                        <span data-key="faq3_question">How does the 'state vs. state' competition work?</span>
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        <span data-key="faq3_answer">In Daily Challenge, your performance contributes to your state's Honor Ranking. In Free Challenge, points you earn add to your state's Contribution Ranking. Play well, and help your state dominate the leaderboards!</span>
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 dark:bg-gray-900 p-6 rounded-xl shadow-lg">
+                    <h3 class="text-xl font-bold mb-3">
+                        <span data-key="faq4_question">What is Hell Mode?</span>
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        <span data-key="faq4_answer">Hell Mode is our toughest challenge, designed to be extremely difficult. It's available only on weekends and offers ultimate bragging rights and exclusive rewards for those who conquer it. Only the top 2% of players can beat it!</span>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-br from-primary to-secondary text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10 px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">
+                <span data-key="cta_title">Ready to Dominate?</span>
+            </h2>
+            <p class="text-xl mb-8 opacity-90">
+                <span data-key="cta_subtitle">Join thousands of word warriors battling for state supremacy. Fair puzzles, epic competition, ultimate bragging rights.</span>
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-xl font-bold text-lg transition-all transform hover:scale-105">
+                    <span data-key="cta_start_playing">🚀 Start Playing Now</span>
+                </button>
+                <button class="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-xl font-bold text-lg transition-all">
+                    <span data-key="cta_get_mobile_app">📱 Get Mobile App</span>
+                </button>
+            </div>
+            <div class="mt-8 text-sm opacity-75">
+                <span data-key="cta_note">Free to play • No pay-to-win • Fair for everyone</span>
+            </div>
+        </div>
+        
+        <!-- Floating elements -->
+        <div class="absolute top-10 left-10 w-20 h-20 bg-white/10 rounded-full animate-float"></div>
+        <div class="absolute bottom-10 right-10 w-32 h-32 bg-white/5 rounded-full animate-bounce-slow"></div>
+        <div class="absolute top-1/2 left-5 w-16 h-16 bg-white/10 rounded-full animate-pulse-slow"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 dark:bg-black text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-2xl font-bold mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                        🏆 Wordle Clash
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        <span data-key="footer_description">The ultimate word battle experience. Fair, competitive, addictive.</span>
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">
+                        <span data-key="footer_game_modes_title">Game Modes</span>
+                    </h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors" data-key="footer_link_daily_challenge">Daily Challenge</a></li>
+                        
+                        <li><a href="#" class="hover:text-white transition-colors" data-key="footer_link_free_challenge">Free Challenge</a></li>
+                        
+                        <li><a href="#" class="hover:text-white transition-colors" data-key="footer_link_hell_mode">Hell Mode</a></li>
+                        
+                        <li><a href="#" class="hover:text-white transition-colors" data-key="footer_link_rankings">Rankings</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">
+                        <span data-key="footer_support_title">Support</span>
+                    </h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors" data-key="footer_link_help_center">Help Center</a></li>
+                        
+                        <li><a href="#" class="hover:text-white transition-colors" data-key="footer_link_contact_us">Contact Us</a></li>
+                        
+                        <li><a href="#" class="hover:text-white transition-colors" data-key="footer_link_bug_reports">Bug Reports</a></li>
+                        
+                        <li><a href="#" class="hover:text-white transition-colors" data-key="footer_link_feature_requests">Feature Requests</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">
+                        <span data-key="footer_legal_title">Legal</span>
+                    </h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors" data-key="footer_link_privacy_policy">Privacy Policy</a></li>
+                        
+                        <li><a href="#" class="hover:text-white transition-colors" data-key="footer_link_terms_of_service">Terms of Service</a></li>
+                        
+                        <li><a href="#" class="hover:text-white transition-colors" data-key="footer_link_cookie_policy">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
+                <p>
+                    <span data-key="footer_copyright">© 2024 Wordle Clash. All rights reserved. | Made with ❤️ for word warriors everywhere.</span>
+                </p>
+            </div>
         </div>
     </footer>
 
-</body>
-</html>
+    <!-- Language Switching Script -->
+    <script>
+        const languageSelector = document.getElementById('languageSelector');
+        
+        let translations = {}; // Store translations here
+
+        async function loadTranslations(lang) {
+            try {
+                const response = await fetch(`/locale/${lang}/index.json`);
+                translations = await response.json();
+                applyTranslations();
+                updateMetaTags(lang);
+            } catch (error) {
+                console.error('Error loading translations:', error);
+            }
+        }
+
+        function applyTranslations() {
+            document.querySelectorAll('[data-key]').forEach(element => {
+                const key = element.getAttribute('data-key');
+                if (translations[key]) {
+                    element.textContent = translations[key];
+                }
+            });
+        }
+
+        function updateMetaTags(lang) {
+            document.documentElement.lang = lang;
+            document.title = translations.app_title || 'Wordle Clash: Nation Domination';
+            document.querySelector('meta[name="description"]').content = translations.meta_description || '';
+            document.querySelector('meta[name="keywords"]').content = translations.meta_keywords || '';
+            document.querySelector('meta[property="og:title"]').content = translations.og_title || '';
+            document.querySelector('meta[property="og:description"]').content = translations.og_description || '';
+            document.querySelector('meta[property="og:site_name"]').content = translations.og_site_name || '';
+            document.querySelector('meta[name="twitter:title"]').content = translations.twitter_title || '';
+            document.querySelector('meta[name="twitter:description"]').content = translations.twitter_description || '';
+        }
+
+        languageSelector.addEventListener('change', (e) => {
+            loadTranslations(e.target.value);
+        });
+        
+        // Load default English translations on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            loadTranslations(languageSelector.value);
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeInUp 0.6s ease-out forwards';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+        
+        // Add CSS for fadeInUp animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            
+            .bg-grid-pattern {
+                background-image: 
+                    linear-gradient(rgba(93, 92, 222, 0.1) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(93, 92, 222, 0.1) 1px, transparent 1px);
+                background-size: 20px 20px;
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+
+
+</body></html>
