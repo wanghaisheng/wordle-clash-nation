@@ -36,5 +36,19 @@
   "section5_right_access": "Access your personal data",
   "section5_right_correction": "Request the correction or deletion of your data",
   "section5_right_withdraw": "Withdraw consent for data processing at any time",
-  "footer_copyright": "© 2024 Wordle Clash Nation. All Rights Reserved."
+  "footer_copyright": "© 2024 Wordle Clash Nation. All Rights Reserved.",
+  "privacy_title": "Politique de confidentialité",
+  "privacy_intro": "Bienvenue sur Wordle Clash Nation Domination. Nous nous engageons à protéger votre vie privée et à garantir la sécurité de vos informations personnelles.",
+  "privacy_information_collection_title": "Collecte des informations",
+  "privacy_information_collection_content": "Nous collectons uniquement les informations nécessaires pour améliorer votre expérience de jeu, telles que les scores, les classements et les préférences linguistiques. Nous ne collectons pas d'informations personnelles identifiables sans votre consentement explicite.",
+  "privacy_information_use_title": "Utilisation des informations",
+  "privacy_information_use_content": "Les informations collectées sont utilisées pour personnaliser votre expérience, améliorer le jeu et assurer l'intégrité des classements. Nous ne partageons pas vos données avec des tiers, sauf si la loi l'exige.",
+  "privacy_data_security_title": "Sécurité des données",
+  "privacy_data_security_content": "Nous mettons en œuvre des mesures de sécurité standard pour protéger vos données contre tout accès non autorisé ou toute divulgation.",
+  "privacy_children_title": "Protection des enfants",
+  "privacy_children_content": "Wordle Clash Nation Domination n'est pas destiné aux enfants de moins de 13 ans. Nous ne collectons pas sciemment d'informations auprès d'enfants.",
+  "privacy_changes_title": "Modifications de la politique",
+  "privacy_changes_content": "Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. Toute modification sera publiée sur cette page.",
+  "privacy_contact_title": "Nous contacter",
+  "privacy_contact_content": "Pour toute question concernant cette politique de confidentialité, veuillez nous contacter à support@wordleclash.playgamesnow.org."
 }

@@ -36,5 +36,19 @@
   "section5_right_access": "Access your personal data",
   "section5_right_correction": "Request the correction or deletion of your data",
   "section5_right_withdraw": "Withdraw consent for data processing at any time",
-  "footer_copyright": "© 2024 Wordle Clash Nation. All Rights Reserved."
+  "footer_copyright": "© 2024 Wordle Clash Nation. All Rights Reserved.",
+  "privacy_title": "プライバシーポリシー",
+  "privacy_intro": "Wordle Clash Nation Dominationへようこそ。私たちはあなたのプライバシーを保護し、個人情報の安全を確保することに努めています。",
+  "privacy_information_collection_title": "情報の収集",
+  "privacy_information_collection_content": "ゲーム体験を向上させるために必要な情報（スコア、ランキング、言語設定など）のみを収集します。明示的な同意なしに個人を特定できる情報は収集しません。",
+  "privacy_information_use_title": "情報の利用",
+  "privacy_information_use_content": "収集した情報は、体験のパーソナライズ、ゲームの改善、ランキングの公正性維持のために使用されます。法令に基づく場合を除き、第三者とデータを共有しません。",
+  "privacy_data_security_title": "データの安全性",
+  "privacy_data_security_content": "不正アクセスや漏洩を防ぐため、標準的なセキュリティ対策を講じています。",
+  "privacy_children_title": "子供の保護",
+  "privacy_children_content": "Wordle Clash Nation Dominationは13歳未満のお子様を対象としていません。子供からの情報を意図的に収集することはありません。",
+  "privacy_changes_title": "ポリシーの変更",
+  "privacy_changes_content": "本プライバシーポリシーは随時更新される場合があります。変更はこのページでお知らせします。",
+  "privacy_contact_title": "お問い合わせ",
+  "privacy_contact_content": "本プライバシーポリシーに関するご質問は support@wordleclash.playgamesnow.org までご連絡ください。"
 }
